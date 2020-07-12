@@ -50,10 +50,18 @@ class MyMap extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 15),
+              child: SizedBox(
+                height: 200,
+                width: MediaQuery.of(context).size.width,
+                child: Image.asset('images/poli.jpg', width: MediaQuery.of(context).size.width, height: 250,),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 15),
               child: Text('Visi :', style: TextStyle(fontSize: 15, color: Colors.deepOrange),),
             ),
-            Text('“ Pada tahun 2025 Menjadi institusi pendidikan vokasional terbaik di Asia Tenggara, bermartabat, dan berwawasan internasional.”', textAlign: TextAlign.justify,),
+            Text('“Pada tahun 2025 Menjadi institusi pendidikan vokasional terbaik di Asia Tenggara, bermartabat, dan berwawasan internasional.”', textAlign: TextAlign.justify,),
             Padding(
               padding: const EdgeInsets.only(top: 15),
               child: Text('Misi :', style: TextStyle(fontSize: 15, color: Colors.deepOrange),),

@@ -59,28 +59,7 @@ class _itemListVerticalState extends State<itemListVertical> {
                                 maxLines: 2,
                               ),
                             Text(data.descriptionNews,
-                            style: TextStyle(fontSize: 14), softWrap: true, maxLines: 3,),
-                            Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
-                                  Row(
-                                    children: <Widget>[
-                                      Icon(Icons.access_time),
-                                      SizedBox(
-                                        width: 4,
-                                      ),
-                                      Text(dateFormat),
-                                      SizedBox(
-                                        width: 4,
-                                      ),
-                                      Text(
-                                        "| PNP",
-                                        style: TextStyle(color: Colors.red),
-                                      )
-                                    ],
-                                  ),
-                                ]),
+                            style: TextStyle(fontSize: 14), softWrap: true, maxLines: 5,),
                           ],
                         ),
                       ),
