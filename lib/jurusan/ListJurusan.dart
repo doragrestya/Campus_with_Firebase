@@ -161,7 +161,6 @@ class _ListJurusanState extends State<ListJurusan> {
   Future<void> _addJur(String jurName) async {
     if (jurName.length > 0) {
       Jurusan jurusan = Jurusan(name: jurName, completed: false);
-
       await _jurRef.push().set(jurusan.toJson());
     }
   }

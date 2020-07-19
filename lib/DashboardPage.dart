@@ -16,7 +16,7 @@ class _DashboardPageState extends State<DashboardPage> {
 
   Future<void> _signOut() async {
     await _googleSignIn.signOut();
-    Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
   }
 
   BaseEndPoint network = NetworkProvider();
